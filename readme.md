@@ -31,9 +31,8 @@ est juste. **Créer la fiche : https://eautsu.github.io/pixel-art-ce1/**
 
 ## 🖼️ Fiches prêtes à imprimer
 
-Pas envie de dessiner ? **10 fiches testées en classe** couvrant une
-progression complète (numération, ±1, ±2, doubles/moitiés, +5, compléments
-à 10, bilan, soustractions) sont dans le dossier [`Fichiers/`](Fichiers/) :
+Pas envie de dessiner ? **8 fiches testées en classe** couvrant une
+progression complète (numération, ±1, ±2, doubles/moitiés/presque-doubles, +5, -5) sont dans le dossier [`Fichiers/`](Fichiers/) :
 PDF élève + corrigé, prêts à télécharger et imprimer.
 
 ## 🎓 Pour l'élève
