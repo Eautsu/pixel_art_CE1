@@ -33,7 +33,7 @@ est juste. **Créer la fiche : https://eautsu.github.io/pixel-art-ce1/**
 
 Pas envie de dessiner ? **10 fiches testées en classe** couvrant une
 progression complète (numération, ±1, ±2, doubles/moitiés, +5, compléments
-à 10, bilan, soustractions) sont dans le dossier [`Fichier/`](Fichier/) :
+à 10, bilan, soustractions) sont dans le dossier [`Fichiers/`](Fichiers/) :
 PDF élève + corrigé, prêts à télécharger et imprimer.
 
 ## 🎓 Pour l'élève
