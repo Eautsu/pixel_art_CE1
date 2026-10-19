@@ -2,7 +2,7 @@
 
 Générez des fiches de calcul dont les réponses révèlent un dessin en pixel art :
 l'élève colorie la case de la couleur indiquée, et l'image apparaît quand tout
-est juste. **Créer la fiche : https://eautsu.github.io/pixel-art-ce1/**
+est juste. **Créer la fiche : https://eautsu.github.io/pixel_art_CE1/**
 
 ## ✨ Ce que l'outil propose
 
