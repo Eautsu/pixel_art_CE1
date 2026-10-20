@@ -29,6 +29,23 @@ est juste. **Créer la fiche : https://eautsu.github.io/pixel-art-ce1/**
 - **Graine de génération** : une même graine redonne exactement la même fiche —
   idéal pour refaire une version pour l'élève qui a raté la première.
 
+  ## 🎯 Ce que vise le programme 2025, et comment l'outil y répond
+
+Le programme de mathématiques du cycle 2 (BOEN du 31 octobre 2024) fait du
+calcul une pratique quotidienne, ritualisée et courte, et attend des faits
+numériques mémorisés, restitués quasi instantanément.
+
+| Ce que dit le programme | Ce que fait le générateur |
+|---|---|
+| Mémoriser des faits numériques (tables d'addition dans les deux sens, doubles, moitiés) | Fiches par type : table stricte, terme manquant, soustraction associée, doubles, presque-doubles, moitiés, tables de multiplication |
+| S'appuyer sur la numération (dizaines, unités) | Modèle numération : le chiffre des dizaines / unités est la réponse |
+| Pratique régulière, ritualisée, courte | Fiches autonomes de 10 minutes, renouvelées à l'infini, corrigé inclus |
+| Différenciation : ajuster la difficulté | Plafond de nombres, nombre de cases, répétitions, graine pour rejouer la même fiche |
+
+**L'auto-correction par le dessin** : si le pixel art est cohérent, les
+calculs sont justes — l'élève se corrige seul, sans adulte. La réussite
+est visible, immédiate et motivante.
+
 ## 🖼️ Fiches prêtes à imprimer
 
 Pas envie de dessiner ? **10 fiches testées en classe** couvrant une
