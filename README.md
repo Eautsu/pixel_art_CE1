@@ -1,101 +1,147 @@
-# Générateur de fiches Pixel art — CE1
+# Générateur Pixel art CE1
 
-Générez des fiches de calcul dont les réponses révèlent un dessin en pixel art :
-l'élève colorie la case de la couleur indiquée, et l'image apparaît quand tout
-est juste. **Créer la fiche : https://eautsu.github.io/pixel-art-ce1/**
+Générez des fiches de calcul dont les réponses révèlent un dessin en pixel art : l'élève colorie la case de la couleur indiquée, et l'image apparaît quand tout est juste.
 
-## ✨ Ce que l'outil propose
+**Créer la fiche :**
+- [Version GitHub Pages](https://eautsu.github.io/pixel_art_CE1/)
+- [Version Forge des communs numériques éducatifs](https://florencebourgeoisbossaert.forge.apps.education.fr/pixel_art_CE1)
 
-- **Dessinez la grille** (10 × 10 ou 15 × 15) directement dans le navigateur :
-  cliquez ou glissez pour colorier, clic droit pour effacer, palette de couleurs
-  personnalisable, annuler, tout effacer, import/export du dessin en texte.
-- **Choisissez les calculs** : additions ±k, soustractions, compléments,
-  additions/soustractions libres, **tables de multiplication**, **doubles,
-  presque-doubles et moitiés**, **chiffre des dizaines / unités / centaines**.
-- **Le nombre caché** (résultat, 1er terme ou 2e terme) correspond toujours au
-  **numéro de la colonne** : toutes les cases d'une colonne portent la même réponse.
-- **Des modèles alignés sur le générateur de grilles de calcul mental** :
-  table stricte, terme manquant, soustraction associée, doubles,
-  presque-doubles, moitiés, tables, numération — ou tout configurer à la main.
-- **Un bouton ❓ Aide** explique tout le fonctionnement directement dans l'outil :
-  principe, étapes, faisabilité, graine.
-- **Analyse de faisabilité mathématique intégrée** : l'outil vérifie AVANT
-  génération que chaque colonne peut recevoir assez de calculs distincts, signale
-  les impossibilités (ex. « un double est toujours pair ») et propose des pistes
-  de correction automatiques (ajouter une notion, autoriser les commutés…).
-- **Deux formats de sortie** : fiche **Word (.docx)** modifiable ou **PDF**
-  (impression directe), avec pages élèves (grille + légende) et **corrigés**
-  (grille coloriée + calculs résolus).
-- **Graine de génération** : une même graine redonne exactement la même fiche —
-  idéal pour refaire une version pour l'élève qui a raté la première.
+Outil autonome (un seul fichier HTML, sans installation ni connexion) qui produit des **fiches « pixel art mathématiques »** pour le cycle 2 : l'élève résout des calculs, chaque réponse lui indique une **colonne** d'une grille, la **lettre** donne la ligne, et il colorie la case correspondante. Une fois tous les calculs faits, le dessin apparaît.
 
-  ## 🎯 Ce que vise le programme 2025, et comment l'outil y répond
+Sortie : une fiche **Word ou PDF** (exercice + corrigé), 10×10 ou 15×15.
 
-Le programme de mathématiques du cycle 2 (BOEN du 31 octobre 2024) fait du
-calcul une pratique quotidienne, ritualisée et courte, et attend des faits
-numériques mémorisés, restitués quasi instantanément.
+---
 
-| Ce que dit le programme | Ce que fait le générateur |
+## 1. Le principe en une minute
+
+| Page élève | Page de correction |
 |---|---|
-| Mémoriser des faits numériques (tables d'addition dans les deux sens, doubles, moitiés) | Fiches par type : table stricte, terme manquant, soustraction associée, doubles, presque-doubles, moitiés, tables de multiplication |
-| S'appuyer sur la numération (dizaines, unités) | Modèle numération : le chiffre des dizaines / unités est la réponse |
-| Pratique régulière, ritualisée, courte | Fiches autonomes de 10 minutes, renouvelées à l'infini, corrigé inclus |
-| Différenciation : ajuster la difficulté | Plafond de nombres, nombre de cases, répétitions, graine pour rejouer la même fiche |
+| Grille vide (lettres en lignes, numéros en colonnes) | Grille coloriée |
+| Légende par couleur : `F) 16 − 9 = ___` | Même légende, avec les réponses |
+| « Laisser les cases non mentionnées en blanc » | Titre du dessin, uniquement ici |
 
-**L'auto-correction par le dessin** : si le pixel art est cohérent, les
-calculs sont justes — l'élève se corrige seul, sans adulte. La réussite
-est visible, immédiate et motivante.
+Pour colorier `F) 16 − 9 = ___` en rouge, l'élève calcule 7, repère la case **F7** et la colorie en rouge. Le dessin est donc l'auto-correction : si une réponse est fausse, la case est mal placée et le dessin est abîmé.
 
-## 🖼️ Fiches prêtes à imprimer
+---
 
-Pas envie de dessiner ? **10 fiches testées en classe** couvrant une
-progression complète (numération, ±1, ±2, doubles/moitiés, +5, compléments
-à 10, bilan, soustractions) sont dans le dossier [`fiches/`](fiches/) :
-PDF élève + corrigé, prêts à télécharger et imprimer.
+## 2. Intérêt pédagogique
 
-## 🎓 Pour l'élève
+### 2.1 Une même fiche travaille deux compétences
 
-1. Il résout les calculs de la légende.
-2. Chaque réponse indique une lettre (ligne) et une couleur.
-3. Il colorie la case correspondante : le dessin apparaît au fur et à mesure.
+- **Calcul** : mémoriser des faits numériques, mobiliser des procédures, en lien direct avec le calcul mental.
+- **Repérage** : se repérer dans un tableau à double entrée (ligne × colonne), compétence de repérage dans l'espace travaillée au CP-CE1 et qui prépare les repérages sur quadrillage et plan.
 
-Une motivation immédiate : la fiche se corrige toute seule — si le dessin est
-cohérent, les calculs sont justes.
+Par rapport à un coloriage magique classique (un code couleur lié à un résultat), la lecture d'une double entrée est ici **indispensable** : sans elle, impossible de placer la case. L'exercice mobilise donc une autre compétence du programme que le calcul seul.
 
-## 👩‍🏫 Pour l'enseignant·e
+### 2.2 La validation est intégrée à l'exercice
 
-1. Dessiner ou importer une grille (l'import accepte le format texte exporté
-   par le vérificateur).
-2. Choisir un modèle ou ses propres types de calculs.
-3. Laisser l'analyse de faisabilité valider (elle bloque la génération si une
-   colonne est mathématiquement impossible).
-4. Générer : exercice + corrigés, en 2 pages (grille et légende) ou pages
-   séparées, avec bandeau « Prénom / Date » optionnel.
+- Pas de réponse à copier : l'élève calcule *avant* de pouvoir colorier.
+- Un résultat faux se voit : la case atterrit au mauvais endroit et le dessin devient incohérent. L'élève a un retour immédiat et peut revenir sur ses calculs.
+- Le correcteur (l'élève, un pair ou l'enseignant) contrôle d'un coup d'œil, sans refaire chaque calcul.
 
-## 📐 Choix pédagogiques
+### 2.3 La motivation vient de la découverte du dessin
 
-- **Pas de hasard incontrôlé** : chaque fiche est vérifiée calcul par calcul
-  avant d'être produite (réponse = numéro de colonne, arithmétique exacte,
-  nombre de cases par couleur).
-- **Différenciation facile** : plafond de nombres réglable, version répétitions
-  acceptées, modèle de soutien possible, graine pour rejouer la même fiche.
-- **Le pixel art n'est pas une récompense, c'est l'autocorrection** : le dessin
-  obtenu EST la validation, sans intervention de l'adulte.
+Le but affiché n'est pas « finir la fiche » mais **découvrir le dessin**. Le dessin peut être choisi par l'enseignant (un animal, un objet lié au projet de classe) ou **validé par les élèves de l'année**. L'effet de surprise et l'envie de vérifier portent l'effort de calcul.
 
-## 🚀 Utiliser sans installation
+### 2.4 Autonomie et organisation de la classe
 
-Le site fonctionne dans n'importe quel navigateur, sur ordinateur ou tablette.
-Aucun compte, aucune donnée envoyée : tout se passe dans la page, et le dessin
-en cours est sauvegardé automatiquement dans le navigateur.
+- Fiche autonome : consigne unique, légende lisible, correction jointe.
+- Compatible avec une **pochette d'autonomie** et un contrôle quotidien par l'enseignant : la tâche tient sur une semaine, par petites séquences.
+- Le corrigé peut être donné aux élèves en autocorrection, ce qui libère l'enseignant pour un groupe de besoin.
 
-## ⚖️ Licence
+### 2.5 Une progression sur la période, pas une activité isolée
 
-Contenu et code sous licence **CC BY-NC-SA 4.0** — voir `LICENSE` et
-`LICENSE-NOTICE.md`. Utilisation libre en classe ; paternité créditée ;
-pas d'usage commercial.
+Le dispositif s'inscrit dans une programmation de sessions (exemple utilisé en classe) :
 
-## 📬 Signaler un problème
+| Session | Notion | Format |
+|---|---|---|
+| S1 | Comptine numérique | pas de fiche |
+| S2 | +1 / −1 | résultat manquant |
+| S3 | +2 / −2 | résultat manquant |
+| S4 | Doubles et moitiés | résultat manquant |
+| S5 | Table de +5 | terme manquant |
+| S6 | Compléments à 10 | terme manquant |
+| S7 | Bilan : ±1 / ±2, trois formats mélangés | résultat, 1er ou 2e terme manquant |
 
-Une coquille, un calcul douteux, une impossibilité non détectée ? Écrivez-moi
-via la page https://github.com/eautsu — les retours des classes sont la meilleure
-façon d'améliorer l'outil.
+- **Période 1 : grille 10×10**, période de rodage : dessins et calculs simples, pour installer la compétence « tableau à double entrée ».
+- **Période 2 : grille 15×15**, dessins plus élaborés une fois la lecture de la grille acquise.
+
+### 2.6 Variété des formats de calcul
+
+Le résultat, le 1er terme ou le 2e terme peut être l'inconnue (`7 + 2 = ___`, `___ + 5 = 9`, `6 + ___ = 10`). 
+On travaille ainsi le sens de l'égalité et des opérations réciproques, au-delà du « calcul qui donne un résultat ».
+
+---
+
+## 3. Lien avec le programme 2025 du cycle 2
+
+Les programmes de cycle 2 en vigueur à la rentrée 2025 sont publiés dans l'annexe du BO n° 41 du 31 octobre 2024. Le dispositif s'y rattache aux entrées suivantes (rattachement au niveau des domaines, pas de citation d'attendus mot à mot) :
+
+| Domaine du programme | Ce que la fiche travaille |
+|---|---|
+| **Nombres et calculs** : mémoriser des faits numériques ; élaborer des stratégies et maîtriser des procédures | ±1, ±2, doubles et moitiés, compléments à 10, tables, calcul mental ; formats à terme manquant |
+| **Nombres et calculs** : numération (dizaines au CP, **centaines au CE1**) | Familles « chiffre des dizaines / des unités / des centaines » |
+| **Espace et géométrie** : repérage dans l'espace (CP-CE1) | Lecture et utilisation d'une double entrée lettre × numéro |
+| **Organisation et gestion des données** : lire un tableau | Utiliser un tableau pour y placer des informations |
+| **Raisonner, communiquer** | Verbaliser sa méthode de calcul, vérifier la cohérence d'un résultat par le dessin |
+
+Le programme insiste sur la **verbalisation des procédures avec les mots de l'élève** : la fiche s'y prête en fin de séance (« comment as-tu trouvé 16 − 9 ? »).
+
+*À vérifier par l'enseignant : la correspondance exacte avec les repères de progression de son niveau (CE1 ou CE2).*
+
+---
+
+## 4. Ce que le générateur apporte à l'enseignant
+
+- **Une fiche en quelques minutes** à partir d'un dessin dessiné dans la page, avec les calculs choisis.
+- **Les calculs sont garantis justes** : le programme vérifie chaque calcul et que la réponse correspond bien à la colonne de la case, avant de livrer la fiche.
+- **Message clair en cas d'impossibilité mathématique** : par exemple, les doubles sont toujours pairs (les colonnes impaires restent vides), un chiffre ne dépasse jamais 9, ou une couleur a plus de cases dans une colonne qu'il n'existe de calculs distincts. Le message donne la cause et les pistes pour y remédier (ajouter les moitiés, un autre format, etc.).
+- **Variété** : les lettres sont mélangées au hasard dans chaque couleur (le dessin est moins prévisible) et deux calculs identiques ne se suivent pas.
+- **Lisibilité** : un rappel « (couleur, suite) » en haut de colonne quand une couleur continue ; mise en page automatique en 2 pages ou en pages séparées.
+- **Export Word ou PDF**, avec nom, code de session et bandeau Prénom/Date.
+
+---
+
+## 5. Mode d'emploi rapide
+
+1. **Dessiner** la grille (10×10 ou 15×15), ou importer un dessin issu du vérificateur.
+2. **Choisir les calculs** : un modèle de départ (S2 à S7, numération) puis ajuster notions, formats, plafond des nombres.
+3. **Lire la faisabilité** : le tableau par colonne indique ce qui est possible ; corriger si une alerte rouge apparaît.
+4. **Choisir le format** (Word ou PDF) et **générer**.
+
+## Que faire si le générateur affiche des messages rouges ?
+
+Deux causes fréquentes :
+
+- **Impossibilité mathématique** : par exemple, des doubles seuls ne peuvent pas remplir les colonnes impaires, et un chiffre ne dépasse jamais 9.
+- **Pas assez de calculs différents** pour composer le dessin.
+
+Dans la plupart des cas, il suffit de :
+
+- accepter quelques répétitions de calculs ;
+- combiner plusieurs notions (par exemple doubles et moitiés) ;
+- combiner plusieurs formes de calcul (`7 + 2 = ?`, `? + 5 = 9` , `6 + ? = 10`).
+
+Le bouton **« Proposer une solution »** applique ces réglages automatiquement et indique ce qu'il a ajouté. Le bouton **« Régler moi-même »** donne accès à tous les choix.
+
+---
+
+## 6. Conditions de réussite et limites (à garder en tête)
+
+- **L'élève doit bien calculer pour trouver sa colonne.** Si la fiche est trop facile à deviner ou si la correction est visible, le calcul peut être contourné : donner le corrigé après la tâche.
+- **Le dessin doit rester un moteur, pas un piège** : au rodage, privilégier des dessins simples et lisibles.
+- **Le contrôle humain compte** : un contrôle régulier (par exemple quotidien) évite qu'un élève s'enferme dans une erreur répétée.
+- **Les répétitions de calculs** sont parfois inévitables (peu de calculs possibles pour certaines colonnes) : l'option est à valider explicitement.
+- Les familles de calcul se limitent aujourd'hui aux additions, soustractions, compléments, tables de multiplication, doubles/moitiés et chiffres ; pas de division.
+
+---
+
+## 7. Fichiers
+
+- `Générateur Pixel art CE1.html` : l'outil (ouvrir dans un navigateur).
+- `verificateur_pixel_art.html` : saisie et validation d'un dessin à part (export compatible).
+- `gabarit_pixel_art.md` : règles de présentation des fiches.
+
+## Sources
+
+- [Programmes de mathématiques cycle 2, présentation (académie d'Orléans-Tours)](https://pedagogie.ac-orleans-tours.fr/documents/pdf/presentation_programmes_maths_c2_pdf.pdf) (renvoie à l'annexe du BO n° 41 du 31/10/24)
